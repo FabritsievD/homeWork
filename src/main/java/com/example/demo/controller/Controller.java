@@ -9,7 +9,7 @@ public class Controller {
     @Autowired
     DemoResponse demoResponse;
 
-    @RequestMapping("/")
+    @RequestMapping("/index")
     public DemoResponse getMessage() {
         demoResponse.setValue("World");
         return demoResponse;

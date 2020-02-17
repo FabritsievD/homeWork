@@ -1,0 +1,17 @@
+server:
+    port: 8081
+spring:
+    security:
+        oauth2:
+            client:
+                registration:
+                    cognito:
+                        clientId: 3sfsn6vomud09jphcr4lqgvtqh
+                        clientSecret: 1l61kg0k4gpfftrr941ddmroqg6cdg8imh22hvplf2p76ool4ue6
+                        scope: openid
+                        redirectUriTemplate: "http://localhost:8081/index"
+                        clientName: TestAppClient
+                    provider:
+                        cognito:
+                        issuerUri: https://cognito-idp.us-east-2.amazonaws.com/us-east-2_9O1vxlon4
+                        usernameAttribute: cognito:dmytro.fabritsyiev
